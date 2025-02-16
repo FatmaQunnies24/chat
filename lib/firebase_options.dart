@@ -4,16 +4,6 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -27,17 +17,17 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
         throw UnsupportedError(
@@ -47,28 +37,31 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDMqV72mEVoBZmiWohWVCMXMgjnepev7xo',
-    appId: '1:476626016703:web:1097ff53cdf15cc3aee90a',
-    messagingSenderId: '476626016703',
-    projectId: 'chat-app-24dca',
-    authDomain: 'chat-app-24dca.firebaseapp.com',
-    storageBucket: 'chat-app-24dca.firebasestorage.app',
+    apiKey: 'AIzaSyB4c0Fng6e_0eYj-fsTARN32LXbq5XrAL8',
+    appId: '1:631393157394:web:2ba5b8b300fa6c3a5b33cb',
+    messagingSenderId: '631393157394',
+    projectId: 'flawlessyou',
+    authDomain: 'flawlessyou.firebaseapp.com',
+    storageBucket: 'flawlessyou.firebasestorage.app',
+    measurementId: 'G-8PDB3KEJ3S',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAMdePKGv4-jG1GhW06eTC_YcSzZ1rmoxo',
-    appId: '1:476626016703:android:ed31e1715efa9623aee90a',
-    messagingSenderId: '476626016703',
-    projectId: 'chat-app-24dca',
-    storageBucket: 'chat-app-24dca.firebasestorage.app',
+    apiKey: 'AIzaSyD8ct7b-OUtN_jDKGtWOzml2JqgIQCbevY',
+    appId: '1:631393157394:android:e0bbe1496e95e33d5b33cb',
+    messagingSenderId: '631393157394',
+    projectId: 'flawlessyou',
+    storageBucket: 'flawlessyou.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDwtAglpm8qkSsAR2r0d3o7Nq16h9S1qlc',
-    appId: '1:476626016703:ios:be712e9159288052aee90a',
-    messagingSenderId: '476626016703',
-    projectId: 'chat-app-24dca',
-    storageBucket: 'chat-app-24dca.firebasestorage.app',
+    apiKey: 'AIzaSyAVKm9-JkHieBFzRfurq5MumrSLlDVrv0s',
+    appId: '1:631393157394:ios:d2884b63f3246be65b33cb',
+    messagingSenderId: '631393157394',
+    projectId: 'flawlessyou',
+    storageBucket: 'flawlessyou.firebasestorage.app',
+    iosClientId: '631393157394-q7026jl38fkbheo0nrgrdst0q2054qss.apps.googleusercontent.com',
     iosBundleId: 'com.example.youtubeMessengerApp',
   );
+
 }
