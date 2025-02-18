@@ -1,10 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
-
 import 'package:youtube_messenger_app/data/models/chat_message.dart';
 
 enum ChatStatus {
-  inital,
+  initial,
   loading,
   loaded,
   error,
@@ -25,7 +24,7 @@ class ChatState extends Equatable {
   final bool amIBlocked;
 
   const ChatState({
-    this.status = ChatStatus.inital,
+    this.status = ChatStatus.initial,
     this.error,
     this.receiverId,
     this.chatRoomId,

@@ -118,9 +118,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         Text(
                           "Sign in to continue",
                           style:
-                              Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                    color: Colors.grey,
-                                  ),
+                          Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            color: Colors.grey,
+                          ),
                         ),
                         const SizedBox(
                           height: 30,
@@ -165,14 +165,14 @@ class _LoginScreenState extends State<LoginScreen> {
                           text: 'Login',
                           child: state.status == AuthStatus.loading
                               ? const CircularProgressIndicator(
-                                  color: Colors.white,
-                                )
+                            color: Colors.white,
+                          )
                               : const Text(
-                                  "Login",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                ),
+                            "Login",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                         const SizedBox(
                           height: 20,
@@ -191,16 +191,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                       .textTheme
                                       .bodyLarge
                                       ?.copyWith(
-                                          color: Theme.of(context).primaryColor,
-                                          fontWeight: FontWeight.bold),
+                                      color: Theme.of(context).primaryColor,
+                                      fontWeight: FontWeight.bold),
                                   recognizer: TapGestureRecognizer()
                                     ..onTap = () {
-                                      // Navigator.push(
-                                      //   context,
-                                      //   MaterialPageRoute(
-                                      //     builder: (context) => const SignupScreen(),
-                                      //   ),
-                                      // );
                                       getIt<AppRouter>()
                                           .push(const SignupScreen());
                                     },
